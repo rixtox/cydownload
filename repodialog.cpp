@@ -87,16 +87,16 @@ void RepoDialog::on_tree_sections_currentItemChanged(QTreeWidgetItem *current, Q
     //enable the download buttons
     enablePackageInfoPanel();
 
-    if (latestPackage.tags.contains("cydia::commercial"))
-    {
-        ui->btn_download->setText("Cannot download commercial packages!");
-        ui->btn_download->setEnabled(false);
-    }
-    else
-    {
+    // if (latestPackage.tags.contains("cydia::commercial"))
+    // {
+    //     ui->btn_download->setText("Cannot download commercial packages!");
+    //     ui->btn_download->setEnabled(false);
+    // }
+    // else
+    // {
         ui->btn_download->setText("Download .deb");
         ui->btn_download->setEnabled(true);
-    }
+    // }
 }
 
 void RepoDialog::on_cmb_pkg_version_currentTextChanged(const QString &arg1)

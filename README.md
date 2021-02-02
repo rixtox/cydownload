@@ -1,13 +1,18 @@
 Built with Qt 5.10
 
 Tested and working builds on:
-* OSX
+* MacOS
 * Windows (MinGW 5.3.0 kit)
 * Linux
 
 # Building and running
 
-## Linux
+## MacOS
+
+`brew install qt`
+
+`brew link -f qt`
+
 `git clone https://github.com/borishonman/cydownload.git`
 
 `cd cydownload`
@@ -16,4 +21,4 @@ Tested and working builds on:
 
 `make`
 
-Type `./cydownload` to run.
+Type `open ./cydownload.app` to run.
